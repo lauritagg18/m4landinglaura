@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Relevamiento/Ayuda a la Iglesia Necesitada</title>
+	<link rel="stylesheet" type="text/css" href="lightbox2-2.11.3/dist/css/lightbox.min.css">
+	<link rel="stylesheet" href="css/estilore.css"/>
+</head>
+<body class="grid_container">
+<header class="header">
+		<a href="index.html"> <img class="logo" src="imagenes/Logo.png" alt="Emergencia en ucrania"></a>
+		<h1 class="titulo">Ayuda a la iglesia necesitada</h1>
+	</header>
+	<nav class="nav">
+			<ul>
+                    <li><a href="relevamiento.html">Relevamiento</a></li>
+                    <li><a href="diseño.html">Diseño</a></li>
+                    <li><a href="pantallas.html">Wireframes y pantallas</a></li>
+                </ul>
+                <a href="#" class="mobile">&#9776;</a>
+	</nav>
+<article class="contenido">
+	<h2>¿QUIÉNES SOMOS?</h2>
+	<p>La Fundación Pontificia Ayuda a la Iglesia Necesitada sirve a la Iglesia católica en su labor evangelizadora, prioritariamente en las comunidades más necesitadas, discriminadas o perseguidas.
+</p>
+	<img class="imagenre"  src="imagenes/hermana con comida.jpg" alt="Imagen personas en Ucrania">
+</article>
+<article class="aside">	
+ <h2>¿A QUÉ NOS DEDICAMOS?</h2>
+<p>En 2020 colaboramos en 138 países gracias a 345.000 benefactores en 23 países. La generosidad de nuestros benefactores nos facilitó 122,7 millones de euros en donaciones, que fueron utilizados para financiar actividades con un presupuesto de 102,1 millones de euros. Los 20,6 millones de euros restantes no pudieron emplearse en 2020 debido a retrasos motivados por el coronavirus, pero se utilizaron para financiar proyectos en el primer semestre de 2021.
+79,1% de los fondos se destinaron a gastos relacionados con la misión, es decir, trabajos necesarios para la misión, es decir, trabajos necesarios para proyectos concretos, tareas de información, apoyo mediático y actividades de oración.
+Así, en 2020 pudimos apoyar 4.758 proyectos en 138 países con aproximadamente 68,6 millones de euros. Con otros 12,2 millones de euros fuimos capaces de realizar tareas de información, divulgación de la fe y ayuda a cristianos discriminados y perseguidos en todo el mundo.</p>
+</article>
+<article class="contenidos">
+<h2>PROYECTOS</h2>
+	<img class="imagenre"  src="imagenes/iconosayuda.png" alt="Imagen personas en Ucrania">
+<div>
+<p><b>EMERGENCIA EN UCRANIA</b><br> La Iglesia en Ucrania, a la que desde esta Fundación Pontificia llevamos apoyando de forma preferente desde hace más de 40 años, nos ha dejado muy claro desde el principio que sus sacerdotes y sus religiosas se quedarán junto a su pueblo, acogiendo, sosteniendo, aliviando, sirviendo.</p>
+</div>
+<div>
+<p><b>PERSEGUIDOS POR SER CRISTIANOS</b><br>Hoy, en pleno siglo XXI, más de 646 millones de cristianos viven en países donde no se respeta la libertad religiosa, sufren discriminación y desprecio, no pueden optar a determinados puestos de trabajo ni recibir un mínimo de educación, lo que les deja sumidos en la pobreza.</p>
+</div>
+<div>
+<p><b>BARCO PARA PASTORAL EN EL AMAZONAS</b><br> Los escasos sacerdotes solo pueden visitar algunas parroquias una o dos veces al año. En dichas visitas, mientras el sacerdote se concentra en la administración de los sacramentos, los misioneros laicos que lo acompañan imparten la catequesis y otras formas de enseñanza de la fe.</p>
+</div>
+</article>
+<footer class="footer">
+  <section class="box">
+  	<div>
+ 	<a href="https://www.ayudaalaiglesianecesitada.org/aviso-legal/">Aviso Legal ꞁ</a>
+	<a href="https://www.ayudaalaiglesianecesitada.org/politica-de-privacidad/">Política de Privacidad ꞁ</a>
+	<a href="https://www.ayudaalaiglesianecesitada.org/politica-de-cookies/">Política de Cookies ꞁ</a>
+ 	<img class="logoup" src="imagenes/logoup.png" alt="Logo Universidad de Palermo">
+			<a href="relevamiento.html" class="name">Laura C Guillen G - Producción Digital II</a>
+ </div>
+ </section>
+	<section class="hola">
+		<div class="redes">
+				<a href="https://twitter.com/AyudaIglesNeces"><img src="imagenes/twitter.png" alt="Twitter"></a>
+			</div>
+			<div class="redes">
+				<a href="https://www.facebook.com/ayudaalaiglesianecesitada/?ref=ts"><img src="imagenes/facebook.png" alt="Facebook"></a>
+			</div>
+			<div class="redes">
+				<a href="https://www.youtube.com/user/AINorg"><img src="imagenes/youtube.png" alt="youtube"></a>
+			</div>
+			<div class="redes">
+				<a href="https://www.instagram.com/ayudaiglesianecesitada/"><img src="imagenes/instagram.png" alt="Instagram"></a>
+			</div>
+		</section>
+</footer>
+	<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+	// acá define qué elemento entra en el slider
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+	
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Cambia la imagen cada 2 segundos
+}
+</script>	
+	<script src="lightbox2-2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
+
+
+

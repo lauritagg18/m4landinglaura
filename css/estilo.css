@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2rem;
+	min-height: 100%; 
+	 
+}
+.emergencia{text-align: center;color: #FFF704;background-color: #2050D6;padding: 1%;
+}
+.box a{color: #000000;text-decoration: none}
+.redes img {float: right;}
+.redes{margin-bottom: -2.5%;margin-right: 2%;}
+.logoup{margin-left: 5%;margin-top: 0.7%;}
+.testimonio img{width: 45%;border-top-left-radius: 20%;border-top-right-radius: 20%;margin-left: 3%;}
+.header h1 {width: 45%;float: right;margin-top: 4%;}
+.mensaje{padding-left: 5%;padding-bottom: 5%;padding-top: 5%;border-top-right-radius:40px;border-bottom-left-radius:40px;opacity: 80%;color: #ffffff;}
+form{border-top-right-radius:40px;border-bottom-left-radius:40px; opacity: 90%;text-align: center;margin-top: -3%;padding-bottom: 5%;}
+label{width: 25%;display: inline-block;font-size: 80%;}
+a{color: #ffffff; font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.donar{font-size: 90%;font-weight: bold;color: #FFF704;background-color: #2050D6;border-radius: 35px;border-color: #FFF704;padding: 1%;margin-top: 1%;}
+input {font-size: 80%;color: #000000;background-color:#ffffff; border-radius: 30px;font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.g{height: 15px;font-size: 70%;}
+.donativo{color: #000000;background-color: #ffffff;font-weight: bold;border-radius: 35px;padding: 0.5%;padding-left: 2%;padding-right: 2%;}
+.donativo1{font-size: 80%;font-weight: bold;color: #000000;background-color: #ffffff;border-radius: 35px;padding-left: 4%;padding-right: 4%;}
+.donativo:hover{background-color:#000000;color: #ffffff;}
+.donativo1:hover{background-color:#000000;color: #ffffff;}
+.divf {width: 100%;margin-bottom: 2%;}
+form h2{font-size: 110%;margin-top: 2%;font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;color:#B81325;}
+textarea{border-radius: 30px;}
+.textex{display: flex;flex-flow: wrap;}
+.footer a{color: #ffffff;}
+.retencion img{filter: grayscale(70%);filter: brightness(30%);}
+.retencion h1{color: #ffffff;}
+.ache21{color: #ffffff;font-size: 100%;}
+.ache22{color: #ffffff;font-size: 100%;}
+.a1{font-size: 80%;color: #000000;border-radius: 35px;background-color: #ffffff;padding-left: 1%; padding-right: 1%;}
+.a2{font-size: 80%;color: #000000;border-radius: 35px;background-color: #ffffff;padding-left: 1%; padding-right: 1%;}
+.a1:hover{background-color:#B81325;color: #ffffff;}
+.a2:hover{background-color:#B81325;color: #ffffff;}
+.name,.box{font-size: 90%;margin-top: -0.5%;}
+.box{margin-left: 2%;}
+.slider{position: fixed;z-index: 1;}
+.slider img{position: relative;z-index: 1;filter: contrast(50%)}
+
+.grid_container{
+	display: grid;
+	gap: 5px;
+	grid-template: 
+	"header" 150px
+	"testimonio" 100px
+	"slider" 200px
+	"retencion" 200px
+	"mensaje"	auto
+	"formulario" 300px
+	"footer" 50px
+	;
+}
+
+.header{
+	grid-area: header;
+	background-color: #ffffff;
+	position: relative;z-index: 4
+}
+
+
+.testimonio{
+	grid-area: testimonio;
+	position: relative;z-index: 2
+}
+
+.formulario{
+	grid-area: formulario;
+	background-color: #EBE9EB;
+	position: relative;z-index: 4
+}
+
+.mensaje{
+	grid-area: mensaje;
+	background-color: #B81325;
+	position: relative;z-index: 4
+}
+
+.retencion{
+	grid-area: retencion;
+	position: relative;z-index: 4;
+	;overflow: hidden
+}
+
+.footer{
+	grid-area: footer;
+	margin-top: -3%;
+	background-color: #B81325;
+	position: relative;z-index: 4;
+}
+
+@media (min-width:50px) 
+
+{
+
+	.grid_container{
+
+		grid-template: 
+		"header     header" 	auto 
+		"mensaje    mensaje" 	auto
+		"formulario formulario" auto
+		"testimonio testimonio" auto
+		"retencion  retencion"  auto
+		"footer     footer"     auto /
+		 100px 		auto;
+ 	}
+.testimonio{display: none;}
+.mensaje{width: 100%;margin-left: 0%;margin-bottom: 0%;}
+.testimonio,.retencion{margin-top: 0%;}
+.logo{width: 35%;}
+.slider{width: 100%}
+.slider img{width: 200%;margin-top: 18%;}
+.emergencia{font-size: 100%;width: 100%;}
+.retencion img{width: 100%;margin-top: 0%;margin-left: 0%;border-radius: 0px}
+.retencion h1{font-size: 100%;position: absolute; top: 5%;left: 10%;}
+.ache21{position: absolute; top: 30%;left: 5%}
+.ache22{position: absolute; top: 30%;left: 60%}
+.a1{position: absolute; top: 50%;left: 15%}
+.a2{position: absolute; top: 50%;left: 70%}
+.redes img {width: 7%;}
+.redes{margin-top: -10%;}
+.box{width: 61%;}
+.box a{font-size: 10px}
+.logoup{width: 10%}
+}
+
+@media (min-width: 576px) {
+	.grid_container{
+		grid-template: 
+		"header 	header 	   header" 	        auto 
+		"mensaje    mensaje    mensaje" 	    auto
+		"formulario formulario formulario" 	    auto
+		"testimonio testimonio testimonio" 	    auto
+		"retencion 	retencion  retencion" 	    auto
+		"footer 	footer 	   footer" 	        auto /
+		 400px 		auto       auto;
+	}
+.testimonio{display: block;}
+.mensaje{width: 100%;margin-left: 0%;margin-bottom: 0%;}
+.testimonio,.retencion{margin-top: 0%;}
+.logo{width: 40%;}
+.slider{width: 100%}
+.slider img{width: 200%;margin-top: 20%;}
+.emergencia{font-size: 200%;width: 120%;}
+.retencion img{width: 100%;margin-top: 0%;margin-left: 0%;border-radius: 0px}
+.retencion h1{font-size: 120%;position: absolute; top: 15%;left: 20%;}
+.ache21{position: absolute; top: 30%;left: 20%}
+.ache22{position: absolute; top: 30%;left: 60%}
+.a1{position: absolute; top: 50%;left: 25%}
+.a2{position: absolute; top: 50%;left: 63%}
+.redes img {width: 7%;}
+.redes{margin-top: -6%;}
+.box{width: 40%;}
+.box a{font-size: 15px}
+.logoup{width: 8%}
+}
+
+
+@media (min-width: 768px) {
+	.grid_container{
+		grid-template: 
+		"header 	header 	   header" 	        auto 
+		"mensaje    mensaje    formulario" 	    auto
+		"testimonio testimonio retencion" 	    auto
+		"footer 	footer 	   footer" 	        auto /
+		 200px 		200px      auto;
+	}
+.testimonio{display: block;}
+.mensaje{width: 70%;margin-left: 35%;margin-bottom: 35%;}
+.testimonio,.retencion{margin-top: -13%;}
+.logo{width: 50%;}
+.slider{width: 90%}
+.slider img{width: 70%;margin-top: 35%;}
+.emergencia{font-size: 200%;width: 100%;}
+.retencion img{width: 90%;margin-top: 2%;margin-left: 5%;border-radius: 20px}
+.retencion h1{font-size: 90%;position: absolute; top: 10%;left: 10%;}
+.ache21{position: absolute; top: 25%;left: 10%}
+.ache22{position: absolute; top: 25%;left: 50%}
+.a1{position: absolute; top: 45%;left: 17%}
+.a2{position: absolute; top: 45%;left: 55%}
+.redes img {width: 5%;}
+.redes{margin-top: -5%;}
+.box{width: 65%;}
+.box a{font-size: 20px}
+.logoup{width: 5%}
+}
+
+ 
+@media (min-width: 900px) {
+	.grid_container{
+		grid-template: 
+		"header 	header 	    header      header" 	        auto 
+		"slider 	slider      formulario  formulario" 	    auto
+		"mensaje    mensaje     formulario  formulario"   	    auto
+		"testimonio retencion   retencion   retencion" 	        auto
+		"footer 	footer      footer	    footer" 	        auto /
+		 500px   	auto        500px       auto 
+	}
+.testimonio{display: block;}
+.mensaje{width: 70%;margin-left: 35%;margin-bottom: 5%;}
+.testimonio,.retencion{margin-top: -13%;}
+.logo{width: 25%;}
+.slider{width: 90%}
+.slider img{width: 70%;margin-top: 9%;}
+.emergencia{font-size: 150%;}
+.retencion img{width: 80%;margin-top: 5%;margin-left: 5%;border-radius: 20px}
+.retencion h1{font-size: 100%;position: absolute; top: 15%;left: 15%;}
+.ache21{position: absolute; top: 30%;left: 15%}
+.ache22{position: absolute; top: 30%;left: 50%}
+.a1{position: absolute; top: 50%;left: 20%}
+.a2{position: absolute; top: 50%;left: 55%}
+.redes img {width: 2%;}
+.redes{margin-top: 0%;}
+.box{width: 90%;}
+.box a{font-size: 18px}
+.logoup{width: 2%}
+}
+
+@media (min-width: 1200px) {
+	.grid_container{
+		grid-template: 
+		"header 	header 	    header      header" 	        auto
+		"slider 	slider      formulario  formulario" 	    auto
+		"slider     mensaje     formulario  formulario"   	    auto
+		"testimonio retencion   retencion   retencion" 	        auto
+		"footer 	footer      footer	    footer" 	        auto /
+		 500px   	auto        500px       auto 
+	}
+.testimonio{display: block;}
+.mensaje{width: 70%;margin-left: 35%;margin-bottom: 5%;}
+.testimonio,.retencion{margin-top: -17%;}
+.logo{width: 17%;}
+.slider{width: 90%}
+.slider img{width: 75%;margin-top: 7%;}
+.emergencia{font-size: 150%;}
+.retencion img{width: 55%;margin-top: 8%;margin-left: 5%;border-radius: 20px}
+.retencion h1{font-size: 90%;position: absolute; top: 27%;left: 15%;}
+.ache21{position: absolute; top: 37%;left: 10%}
+.ache22{position: absolute; top: 37%;left: 40%}
+.a1{position: absolute; top: 55%;left: 13%}
+.a2{position: absolute; top: 55%;left: 43%}
+.redes img {width: 2%;}
+.redes{margin-top: 0%;}
+.box{width: 90%;}
+.box a{font-size: 17px}
+.logoup{width: 2%}
+}
